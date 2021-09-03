@@ -39,6 +39,8 @@ class OnBoardingViewController: UIViewController {
                     OnBoardingSlide(title: "World-Class Chefs", description: "Our dishes are prepared by only the best.", image: #imageLiteral(resourceName: "slide1")),
                     OnBoardingSlide(title: "Instant World-Wide Delivery", description: "Your orders will be delivered instantly irrespective of your location around the world.", image: #imageLiteral(resourceName: "slide3"))
                 ]
+        //page control to adapt to any number of slides we desire to have
+        pageControl.numberOfPages =  slides.count
                 
     }
     
@@ -86,7 +88,7 @@ extension OnBoardingViewController : UICollectionViewDelegate, UICollectionViewD
        //detect if the user has finished scrolling to update page control indicator
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x/width)
-        
+       
         
     }
     
