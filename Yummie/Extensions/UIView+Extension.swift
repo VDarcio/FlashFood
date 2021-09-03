@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIView{
-    
+    //computed property to set corner radius on main.storyboard
     @IBInspectable var cornerradius :CGFloat{
         get {return cornerradius}
         set {

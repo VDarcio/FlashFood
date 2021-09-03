@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-
+// class to inherit from so views can have shadow arround them
 
 class CardView: UIView{
     
@@ -25,6 +25,7 @@ class CardView: UIView{
         layer.shadowOffset = .zero
         layer.cornerRadius = 10
         layer.shadowOpacity = 0.1
+        layer.shadowRadius = 10
         cornerradius = 10
         
     }
