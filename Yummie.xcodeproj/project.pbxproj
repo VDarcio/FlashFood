@@ -28,6 +28,8 @@
 		759FD19126E285D400729E88 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759FD19026E285D400729E88 /* Dish.swift */; };
 		759FD19526E2BF9200729E88 /* DishLandScapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759FD19326E2BF9200729E88 /* DishLandScapeCollectionViewCell.swift */; };
 		759FD19626E2BF9200729E88 /* DishLandScapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759FD19426E2BF9200729E88 /* DishLandScapeCollectionViewCell.xib */; };
+		75A5015F26E3F90700DFB635 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5015E26E3F90700DFB635 /* DishDetailViewController.swift */; };
+		75A5016126E403F600DFB635 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5016026E403F600DFB635 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		759FD19026E285D400729E88 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		759FD19326E2BF9200729E88 /* DishLandScapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandScapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		759FD19426E2BF9200729E88 /* DishLandScapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandScapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		75A5015E26E3F90700DFB635 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		75A5016026E403F600DFB635 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		FAE5B2D1E4EAA6987172A4DA /* Pods-Yummie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.debug.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +130,7 @@
 		7570986926E1A11600ED7844 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				75A5015D26E3F8EC00DFB635 /* DIshDetail */,
 				759FD17526E25F5100729E88 /* Home */,
 				7570986A26E1A12500ED7844 /* Onboarding */,
 			);
@@ -156,6 +161,7 @@
 			children = (
 				7570986F26E1A33900ED7844 /* UIView+Extension.swift */,
 				759FD18026E26F7400729E88 /* String+Extension.swift */,
+				75A5016026E403F600DFB635 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,6 +217,14 @@
 				759FD19426E2BF9200729E88 /* DishLandScapeCollectionViewCell.xib */,
 			);
 			path = DishLandscapeCollectionviewCell;
+			sourceTree = "<group>";
+		};
+		75A5015D26E3F8EC00DFB635 /* DIshDetail */ = {
+			isa = PBXGroup;
+			children = (
+				75A5015E26E3F90700DFB635 /* DishDetailViewController.swift */,
+			);
+			path = DIshDetail;
 			sourceTree = "<group>";
 		};
 		A7E5B9360CFAA02C4046C999 /* Frameworks */ = {
@@ -338,12 +352,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A5016126E403F600DFB635 /* UIViewController+Extension.swift in Sources */,
 				759FD17C26E26A8100729E88 /* CategoryCollectionViewCell.swift in Sources */,
 				7570986D26E1A15A00ED7844 /* OnBoardingViewController.swift in Sources */,
 				759FD17F26E26D3600729E88 /* DishCategory.swift in Sources */,
 				7570985526E19E2F00ED7844 /* AppDelegate.swift in Sources */,
 				7570987026E1A33900ED7844 /* UIView+Extension.swift in Sources */,
 				7570987426E1A5E100ED7844 /* OnBoardingCollectionViewCell.swift in Sources */,
+				75A5015F26E3F90700DFB635 /* DishDetailViewController.swift in Sources */,
 				7570985726E19E2F00ED7844 /* SceneDelegate.swift in Sources */,
 				759FD17726E25F6D00729E88 /* HomeViewController.swift in Sources */,
 				759FD18126E26F7400729E88 /* String+Extension.swift in Sources */,
