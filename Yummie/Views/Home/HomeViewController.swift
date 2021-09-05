@@ -106,7 +106,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         
         if collectionView == categoryCollectionjView{
-            
+            let controller = ListDishesViewController.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
             
         }else{
             let controller = DishDetailViewController.instantiate()
