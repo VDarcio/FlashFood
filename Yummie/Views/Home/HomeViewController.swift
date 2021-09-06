@@ -41,6 +41,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NetworkService.shared.myFirstRequest()
+        
+       
         registerCells()
     }
     
