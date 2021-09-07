@@ -17,16 +17,13 @@ struct NetworkService {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     func fetchAllCategories(completion : @escaping(Result<AllDishes, Error>)-> Void){
         request(route: .fetchAllCAtegories, method: .get, completion: completion)
+    }
+    
+    func placeOrder(dishiD : String, name: String, completion: @escaping(Result<Order,Error>)->Void){
+        let params = ["name" : name]
+        request(route: .placeOrder(dishiD), method: .post, parameters: params, completion: completion)
     }
     
     
@@ -45,7 +42,7 @@ struct NetworkService {
                 result = .success(data)
                     
                 let responseString = String(data : data, encoding: .utf8) ?? "could not turn into a string"
-               // print("response = \(responseString)")
+                print("response = \(responseString)")
             }else if let error = error{
                 result = .failure(error)
                 print(error)
