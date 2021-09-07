@@ -6,13 +6,12 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ListOrdersViewController: UIViewController {
 
     var orders : [Order] = [
-        .init(id: "id1", name: "pao c bolacha", dish: .init(id: "id1", name: "qualquer coisa", description: "mto bom", calories: 34, image: "https://picsum.photos/100/200")),
-        .init(id: "id1", name: "pao c bolacha", dish: .init(id: "id1", name: "qualquer coisa", description: "mto bom", calories: 34, image: "https://picsum.photos/100/200")),
-        .init(id: "id1", name: "pao c bolacha", dish: .init(id: "id1", name: "qualquer coisa", description: "mto bom", calories: 34, image: "https://picsum.photos/100/200"))
+        
             
     
     
@@ -26,7 +25,27 @@ class ListOrdersViewController: UIViewController {
         super.viewDidLoad()
 registerCells()
         title = "Orders"
+        ProgressHUD.show()
+        
+        
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NetworkService.shared.fetchOrders { [weak self]result in
+            switch result{
+            
+        
+            case .success(let ordersfetched):
+                self?.orders = ordersfetched
+                self?.tableView.reloadData()
+                ProgressHUD.dismiss()
+                
+                ProgressHUD.dismiss()
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     
     private func registerCells(){

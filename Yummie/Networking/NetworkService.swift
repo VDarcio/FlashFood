@@ -16,7 +16,8 @@ struct NetworkService {
     private init() {}
     
     
-    
+    //MARK:-API CALLS
+
     func fetchAllCategories(completion : @escaping(Result<AllDishes, Error>)-> Void){
         request(route: .fetchAllCAtegories, method: .get, completion: completion)
     }
@@ -24,7 +25,23 @@ struct NetworkService {
     func placeOrder(dishiD : String, name: String, completion: @escaping(Result<Order,Error>)->Void){
         let params = ["name" : name]
         request(route: .placeOrder(dishiD), method: .post, parameters: params, completion: completion)
+        
     }
+    
+    
+    func fetchCAtegoryDishes(categoryId: String, completion : @escaping (Result<[Dish], Error>)->Void){
+        request(route: .fetchCategoryDishes(categoryId), method: .get, completion: completion)
+        
+    }
+    
+    func fetchOrders(completion : @escaping(Result<[Order], Error>)->Void){
+        request(route: .fetchOrder, method: .get, completion: completion)
+        
+    }
+        
+    
+    //MARK:-ASSISTANT FUNCTIONS
+
     
     
     private func request<T:Decodable> (route: Route, method : Method, parameters : [String:Any]? = nil,  completion: @escaping(Result<T, Error>)-> Void){
