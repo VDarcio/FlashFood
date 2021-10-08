@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F2E4062D38C4977BE44CC29 /* Pods_Yummie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18088DD0AAF9BAA118198419 /* Pods_Yummie.framework */; };
+		7532E8E82710955200D7BA6A /* Network Service Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532E8E72710955200D7BA6A /* Network Service Template.swift */; };
 		7562FEFD26E511D400F6B02B /* DishListableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562FEFB26E511D400F6B02B /* DishListableViewCell.swift */; };
 		7562FEFE26E511D400F6B02B /* DishListableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7562FEFC26E511D400F6B02B /* DishListableViewCell.xib */; };
 		7562FF0126E5143E00F6B02B /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562FF0026E5143E00F6B02B /* ListDishesViewController.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		18088DD0AAF9BAA118198419 /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D970B9AC75809829FA3D66 /* Pods-Yummie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.release.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.release.xcconfig"; sourceTree = "<group>"; };
+		7532E8E72710955200D7BA6A /* Network Service Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Service Template.swift"; sourceTree = "<group>"; };
 		7562FEFB26E511D400F6B02B /* DishListableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListableViewCell.swift; sourceTree = "<group>"; };
 		7562FEFC26E511D400F6B02B /* DishListableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListableViewCell.xib; sourceTree = "<group>"; };
 		7562FF0026E5143E00F6B02B /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				7562FF0C26E5A7F800F6B02B /* Method.swift */,
 				7562FF0E26E6583800F6B02B /* AppError.swift */,
 				7562FF1026E6989A00F6B02B /* ApiResponse.swift */,
+				7532E8E72710955200D7BA6A /* Network Service Template.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				759FD18426E279BC00729E88 /* CardView.swift in Sources */,
 				7570987226E1A3B100ED7844 /* OnBoardingSlide.swift in Sources */,
 				7562FF0126E5143E00F6B02B /* ListDishesViewController.swift in Sources */,
+				7532E8E82710955200D7BA6A /* Network Service Template.swift in Sources */,
 				7562FF0F26E6583800F6B02B /* AppError.swift in Sources */,
 				759FD19126E285D400729E88 /* Dish.swift in Sources */,
 				759FD19526E2BF9200729E88 /* DishLandScapeCollectionViewCell.swift in Sources */,
