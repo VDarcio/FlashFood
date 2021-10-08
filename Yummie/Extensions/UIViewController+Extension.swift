@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-//extension to prevent you from instatiating a vnew viewcontroller multiple times
+//extension to prevent you from instatiating a new viewcontroller multiple times
 
 extension UIViewController{
     

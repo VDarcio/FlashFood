@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="X0O-jo-cOF">
-                                <rect key="frame" x="0.0" y="44" width="414" height="684.5"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="686"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6vD-5d-rtj">
                                     <size key="itemSize" width="410" height="506"/>
@@ -28,14 +29,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnBoardingCollectionViewCell" id="gac-qQ-PoF" customClass="OnBoardingCollectionViewCell" customModule="Yummie" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="89.5" width="410" height="506"/>
+                                        <rect key="frame" x="0.0" y="90" width="410" height="506"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Kb8-xU-zvt">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="506"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eWg-ys-J5K">
-                                                    <rect key="frame" x="0.0" y="0.0" width="410" height="394"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="410" height="394.5"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RH1-zm-fBm">
                                                     <rect key="frame" x="16" y="416.5" width="378" height="73.5"/>
@@ -69,9 +70,10 @@
                                                 <constraint firstItem="RH1-zm-fBm" firstAttribute="leading" secondItem="Kb8-xU-zvt" secondAttribute="leading" constant="16" id="30Q-6C-3le"/>
                                                 <constraint firstItem="eWg-ys-J5K" firstAttribute="leading" secondItem="Kb8-xU-zvt" secondAttribute="leading" id="75v-IR-arN"/>
                                                 <constraint firstAttribute="bottom" secondItem="RH1-zm-fBm" secondAttribute="bottom" constant="16" id="IF0-ZR-klk"/>
+                                                <constraint firstItem="RH1-zm-fBm" firstAttribute="centerX" secondItem="Kb8-xU-zvt" secondAttribute="centerX" id="OtQ-8h-4uu"/>
                                                 <constraint firstItem="eWg-ys-J5K" firstAttribute="top" secondItem="Kb8-xU-zvt" secondAttribute="top" id="Zeg-Pe-tsZ"/>
                                                 <constraint firstAttribute="trailing" secondItem="eWg-ys-J5K" secondAttribute="trailing" id="c3b-5Y-CH6"/>
-                                                <constraint firstItem="RH1-zm-fBm" firstAttribute="top" secondItem="eWg-ys-J5K" secondAttribute="bottom" constant="22.5" id="w8P-02-G60"/>
+                                                <constraint firstItem="RH1-zm-fBm" firstAttribute="top" secondItem="eWg-ys-J5K" secondAttribute="bottom" constant="22" id="w8P-02-G60"/>
                                                 <constraint firstAttribute="trailing" secondItem="RH1-zm-fBm" secondAttribute="trailing" constant="16" id="yZX-me-62F"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -108,7 +110,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="d6P-Zg-Pfx">
-                                <rect key="frame" x="146.5" y="728.5" width="121.5" height="27.5"/>
+                                <rect key="frame" x="129.5" y="730" width="155.5" height="26"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
                                 <color key="currentPageIndicatorTintColor" red="1" green="0.1481650497" blue="0.1952021021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -134,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="116"/>
+            <point key="canvasLocation" x="-626.08695652173913" y="115.84821428571428"/>
         </scene>
         <!--Yummie-->
         <scene sceneID="XWI-kn-Aic">
