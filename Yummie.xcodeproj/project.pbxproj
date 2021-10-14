@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F2E4062D38C4977BE44CC29 /* Pods_Yummie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18088DD0AAF9BAA118198419 /* Pods_Yummie.framework */; };
 		7532E8E82710955200D7BA6A /* Network Service Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532E8E72710955200D7BA6A /* Network Service Template.swift */; };
+		753F0A0827176073001367FA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 753F0A0727176073001367FA /* README.md */; };
 		7562FEFD26E511D400F6B02B /* DishListableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562FEFB26E511D400F6B02B /* DishListableViewCell.swift */; };
 		7562FEFE26E511D400F6B02B /* DishListableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7562FEFC26E511D400F6B02B /* DishListableViewCell.xib */; };
 		7562FF0126E5143E00F6B02B /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562FF0026E5143E00F6B02B /* ListDishesViewController.swift */; };
@@ -48,6 +49,7 @@
 		18088DD0AAF9BAA118198419 /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D970B9AC75809829FA3D66 /* Pods-Yummie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.release.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.release.xcconfig"; sourceTree = "<group>"; };
 		7532E8E72710955200D7BA6A /* Network Service Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Service Template.swift"; sourceTree = "<group>"; };
+		753F0A0727176073001367FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7562FEFB26E511D400F6B02B /* DishListableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListableViewCell.swift; sourceTree = "<group>"; };
 		7562FEFC26E511D400F6B02B /* DishListableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListableViewCell.xib; sourceTree = "<group>"; };
 		7562FF0026E5143E00F6B02B /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		7570984826E19E2F00ED7844 = {
 			isa = PBXGroup;
 			children = (
+				753F0A0727176073001367FA /* README.md */,
 				7570985326E19E2F00ED7844 /* Yummie */,
 				7570985226E19E2F00ED7844 /* Products */,
 				5E0D8D3E4E965230170F8177 /* Pods */,
@@ -376,6 +379,7 @@
 				759FD19626E2BF9200729E88 /* DishLandScapeCollectionViewCell.xib in Resources */,
 				759FD18F26E27FDD00729E88 /* DishPortraitCollectionViewCell.xib in Resources */,
 				7570985E26E19E3500ED7844 /* Assets.xcassets in Resources */,
+				753F0A0827176073001367FA /* README.md in Resources */,
 				7570985C26E19E2F00ED7844 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
