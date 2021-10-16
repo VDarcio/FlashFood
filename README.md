@@ -1,4 +1,4 @@
-# Yummie
+# FlashFood
 
 <p float="left">
   <img src="screenshots/ss1.jpg" width="300" />
@@ -8,7 +8,7 @@
 
 # Description 
 
-Yummie is an app that uses mock Data to simulate a food delivery app using GET and POST URL Requests
+FlashFood is an app that uses mock Data to simulate a food delivery app using GET and POST URL Requests
 
 # Features
 - Simulate Food ordering
