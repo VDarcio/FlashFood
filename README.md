@@ -21,7 +21,7 @@ FlashFood is an app that uses mock Data to simulate a food delivery app using GE
 - Simulate Food ordering
 - Check past Orders
 - Check Food Details (Just as Part of the recepies and calories)
-- Track user's credi Card Info and accept Payments
+- Track user's credit Card Info and accept Payments
 # Tools used
 - Postman (to host the API)
 - Swift  (Programming Language used on the entire Project)
