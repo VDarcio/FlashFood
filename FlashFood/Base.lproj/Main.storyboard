@@ -371,7 +371,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KgN-dR-Cer">
-                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="180.5" width="414" height="681.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CardsCell" textLabel="ugQ-CU-vBy" detailTextLabel="1O3-dY-lL4" style="IBUITableViewCellStyleSubtitle" id="mqN-4f-dfV">
@@ -405,25 +405,33 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U17-kg-JJL">
-                                <rect key="frame" x="20" y="104" width="128" height="31"/>
+                                <rect key="frame" x="20" y="104" width="131.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="+ Add new Card"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+ Add new Card "/>
                                 <connections>
                                     <action selector="newCardPressed:" destination="QFX-0c-u0B" eventType="touchUpInside" id="svr-uU-Huv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(PLEASE DONT USE YOUR REAL CARD INFO)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDz-YO-Mge">
+                                <rect key="frame" x="20" y="140" width="377.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u97-AL-LLs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="XDz-YO-Mge" firstAttribute="leading" secondItem="u97-AL-LLs" secondAttribute="leading" constant="20" id="5HL-TV-6lD"/>
+                            <constraint firstItem="XDz-YO-Mge" firstAttribute="top" secondItem="U17-kg-JJL" secondAttribute="bottom" constant="5" id="8A9-W6-aJA"/>
                             <constraint firstItem="U17-kg-JJL" firstAttribute="top" secondItem="nuT-Hz-wWY" secondAttribute="bottom" constant="10" id="Eou-XX-hE4"/>
                             <constraint firstItem="nuT-Hz-wWY" firstAttribute="leading" secondItem="u97-AL-LLs" secondAttribute="leading" constant="20" id="GgX-4a-qsL"/>
                             <constraint firstItem="KgN-dR-Cer" firstAttribute="trailing" secondItem="u97-AL-LLs" secondAttribute="trailing" id="PsR-hH-gEY"/>
-                            <constraint firstItem="KgN-dR-Cer" firstAttribute="top" secondItem="U17-kg-JJL" secondAttribute="bottom" constant="10" id="SCR-Uo-TtA"/>
                             <constraint firstItem="KgN-dR-Cer" firstAttribute="leading" secondItem="u97-AL-LLs" secondAttribute="leading" id="TfO-BH-oqh"/>
                             <constraint firstItem="nuT-Hz-wWY" firstAttribute="top" secondItem="u97-AL-LLs" secondAttribute="top" constant="20" id="WCP-tw-CVB"/>
                             <constraint firstItem="u97-AL-LLs" firstAttribute="bottom" secondItem="KgN-dR-Cer" secondAttribute="bottom" id="YB4-TB-CCK"/>
                             <constraint firstItem="U17-kg-JJL" firstAttribute="leading" secondItem="u97-AL-LLs" secondAttribute="leading" constant="20" id="ald-aJ-0r0"/>
+                            <constraint firstItem="KgN-dR-Cer" firstAttribute="top" secondItem="XDz-YO-Mge" secondAttribute="bottom" constant="20" id="gDN-ZB-YZe"/>
                         </constraints>
                     </view>
                     <connections>
@@ -432,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFI-m6-p6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="955"/>
+            <point key="canvasLocation" x="1944.9275362318842" y="954.91071428571422"/>
         </scene>
         <!--Credit Cards View Controller-->
         <scene sceneID="7Mq-EB-aIW">
