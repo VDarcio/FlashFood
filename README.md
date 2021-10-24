@@ -27,3 +27,6 @@ FlashFood is an app that uses mock Data to simulate a food delivery app using GE
 - Swift  (Programming Language used on the entire Project)
 - CocoaPods (ProgressHUD, KingFisher, IQKeyboardManager)
 
+
+You can Test this App On TestFlight using this link : https://testflight.apple.com/join/382Cm0Ej
+
