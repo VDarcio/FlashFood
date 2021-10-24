@@ -11,7 +11,12 @@ FlashFood is an app that uses mock Data to simulate a food delivery app using GE
 </p>
 
 ## Payment Preview
-<img src="https://s8.gifyu.com/images/ezgif.com-gif-maker.gif" width="300" width="300" />
+
+<p float="left">
+  <img src="screenshots/ss4.png" width="300" />
+  <img src="screenshots/ss5.png" width="300" /> 
+</p>
+
 
 
 
@@ -26,4 +31,7 @@ FlashFood is an app that uses mock Data to simulate a food delivery app using GE
 - Postman (to host the API)
 - Swift  (Programming Language used on the entire Project)
 - CocoaPods (ProgressHUD, KingFisher, IQKeyboardManager)
+
+
+You can Test this App On TestFlight using this link : https://testflight.apple.com/join/382Cm0Ej
 
